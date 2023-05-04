@@ -12,11 +12,11 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 
-const pathSrc = path.resolve(__dirname, 'src')
+const pathSrc = path.resolve(__dirname, 'src').replace(/\\/g, '/')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: path.resolve(__dirname, './dist'),
+  base: path.resolve(__dirname, './dist').replace(/\\/g, '/'),
   resolve: {
     alias: {
       '~/': `${pathSrc}/`
