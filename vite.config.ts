@@ -16,7 +16,7 @@ const pathSrc = path.resolve(__dirname, 'src').replace(/\\/g, '/')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: path.resolve(__dirname, './dist').replace(/\\/g, '/'),
+  base: './',
   resolve: {
     alias: {
       '~/': `${pathSrc}/`

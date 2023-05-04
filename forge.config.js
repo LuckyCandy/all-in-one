@@ -7,16 +7,25 @@ module.exports = {
       config: {},
     },
     {
-      name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
-    },
-    {
-      name: '@electron-forge/maker-deb',
-      config: {},
-    },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
+      name: '@electron-forge/maker-dmg',
+      config: {
+        background: './public/imgs/logo.png',
+        format: 'ULFO',
+        name: 'AIO',
+        overwrite: true,
+        additionalDMGOptions: {
+          window: {
+            position: {
+              x: 110,
+              y: 150
+            },
+            size: {
+              height: 600,
+              width: 500
+            }
+          }
+        }
+      }
     }
   ],
 };
