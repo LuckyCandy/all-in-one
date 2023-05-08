@@ -1,5 +1,7 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    asar: true
+  },
   rebuildConfig: {},
   makers: [
     {
@@ -20,8 +22,8 @@ module.exports = {
               y: 150
             },
             size: {
-              height: 600,
-              width: 500
+              height: 500,
+              width: 700
             }
           }
         }
